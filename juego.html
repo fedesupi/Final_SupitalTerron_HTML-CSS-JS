@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Trabajo Final</title>
+</head>
+<body>
+    <nav>
+        <a href="/"><svg width="200" height="80">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="rect-1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="rect-2" fill="#495579"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="poli-1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="poli-2"></polygon>
+            </svg></a>
+        <ul class="menu">
+            <li class="boton-afuera"><a class="boton-adentro" href="/historia.html">HISTORIA</a></li>
+            <li class="boton-afuera"><a class="boton-adentro" href="/juego.html">JUGUEMOS</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="titulo-blanco">JUGUEMOS UN POCO</h1> 
+     </header>
+     <main>
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+        <section class="juego">
+            <div class="cajas">
+                <div class="caja" id="caja-destino-1">
+                    <p>Arrastre y suelte la imágene aquí</p>
+                </div>
+                <div class="caja" id="caja-destino-2">
+                    <p>Arrastre y suelte la imágene aquí</p>
+                </div>
+                <div class="caja" id="caja-destino-3">
+                    <p>Arrastre y suelte la imágene aquí</p>
+                </div>
+            </div>
+            <div class="imagen-caja" id="imagen-caja">
+                <img class="imagen-juego" id="imagen1" src="images/rompe2.png" alt="imagen-rompecabezas">
+                <img class="imagen-juego" id="imagen2" src="images/Rompe1.png" alt="imagen-rompecabezas">
+                <img class="imagen-juego" id="imagen3" src="images/Rompe3.png" alt="imagen-rompecabezas">
+            </div>
+            <button onclick="reinicio()" class="boton-adentro boton-reiniciar">Reiniciar</button>
+        </section>
+    </main>
+    <script src="./scriptJuego.js"></script>
+</body>
+</html>
